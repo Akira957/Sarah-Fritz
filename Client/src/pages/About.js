@@ -1,8 +1,6 @@
 import React from 'react';
 import Footer from "../components/Footer";
 
-const date = new Date();
-
 function About() {
     return (
         <div>
