@@ -9,13 +9,14 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <div className="App">
-    <Navigation />
+    {/* <Navigation />
    <Switch>
      <Route exact path="/" component={Home} />
      <Route path="/About" component={About} />
      <Route path="/Artwork" component={Artwork} />
      <Route path="/Categories" component={Categories} />
-   </Switch>
+   </Switch> */}
+   <Home />
    </div>
   );
 }
