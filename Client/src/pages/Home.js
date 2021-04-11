@@ -1,12 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
+import Footer from "../components/Footer";
 
-const Home = () => {
-    return (
-        <div>
-            <h2>Collector of Art</h2>
-            <h2>This is her Collection over the years</h2>
-        </div>
-    )
+
+class Home extends Component {
+    render() {
+        return (
+            <div>
+                <h2>Collector of Art</h2>
+                <h2>This is her Collection over the years</h2>
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default Home;
