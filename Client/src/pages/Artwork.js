@@ -6,6 +6,7 @@ class Artwork extends Component {
         return (
             <div>
                 <h1>Pictures of her Artwork</h1>
+                <Footer />
             </div>
         )
     }

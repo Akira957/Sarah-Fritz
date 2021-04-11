@@ -6,6 +6,7 @@ class Categories extends Component {
         return (
             <div>
                 <h1>Artwork Categories</h1>
+                <Footer />
             </div>
         )
     }
