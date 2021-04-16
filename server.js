@@ -21,8 +21,6 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-// const artSeed = require("./Scripts/seedDB");
-
 app.use(session({
     secret: process.env.secret,
     resave: false,
