@@ -21,10 +21,10 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-const artSeed = require("./Scripts/seedDB");
+// const artSeed = require("./Scripts/seedDB");
 
 app.use(session({
-    secret: "Norse Mythology should be further studied.",
+    secret: process.env.secret,
     resave: false,
     saveUninitialized: false
 }));
