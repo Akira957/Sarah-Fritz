@@ -1,23 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Home from "./pages/Home";
 import About from './pages/About';
 import Artwork from "./pages/Artwork";
 import Categories from "./pages/Categories";
-import Home from "./pages/Home";
+import Main from "./pages/Main";
 import Navigation from "./components/Navigation";
 
 
 function App() {
   return (
-    <div className="App">
-      <Navigation>
-        <Link exact path="/" component={Home} />
-        <Link path="/About" component={About} />
-        <Link path="/Artwork" component={Artwork} />
-        <Link path="/Categories" component={Categories} />
-      </Navigation>
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation>
+          <Link to="/" component={Home} />
+          <Link to="/About" component={About} />
+          <Link to="/Artwork" component={Artwork} />
+          <Link to="/Categories" component={Categories} />
+        </Navigation>
+        <Main />
+      </div>
+    </Router>
   );
 }
 
