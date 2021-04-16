@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 app.use(session({
-    secret: "Norse Mythology should further studied.",
+    secret: "Norse Mythology should be further studied.",
     resave: false,
     saveUninitialized: false
 }));
