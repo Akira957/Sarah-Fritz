@@ -31,16 +31,22 @@ const artSeed = [
         image: "./images/GlassArt"
     },
     {
-        title: "",
+        title: "Red White and Blue Print",
         artist: "",
-        category: "",
-        image: ""
+        category: "Print",
+        image: "./images/Painting4"
     },
     {
-        title: "",
+        title: "Obsure Print",
         artist: "",
-        category: "",
-        image: ""
+        category: "Print",
+        image: "./images/Painting5"
+    },
+    {
+        title: "Town Painting",
+        artist: "",
+        category: "Painting",
+        image: "./images/Painting6"
     },
 ];
 
