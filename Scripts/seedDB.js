@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const db = require("../Models");
-const image = require("./images");
 
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/artDB"
@@ -8,45 +7,39 @@ mongoose.connect(
 
 const artSeed = [
     {
-        title: "",
+        title: "Watercolor Print",
         artist: "",
-        category: "Painting",
-        description: "",
+        category: "Print",
         image: "./images/Painting1"
     },
     {
+        title: "Black and White Print",
+        artist: "",
+        category: "Print",
+        image: "./images/Painting2"
+    },
+    {
+        title: "1800s Print",
+        artist: "",
+        category: "Print",
+        image: "./images/Painting3"
+    },
+    {
+        title: "Glass Sculpture",
+        artist: "",
+        category: "Glass Art",
+        image: "./images/GlassArt"
+    },
+    {
         title: "",
         artist: "",
         category: "",
-        description: "",
         image: ""
     },
     {
         title: "",
         artist: "",
         category: "",
-        description: "",
-        image: ""
-    },
-    {
-        title: "",
-        artist: "",
-        category: "",
-        description: "",
-        image: ""
-    },
-    {
-        title: "",
-        artist: "",
-        category: "",
-        description: "",
-        image: ""
-    },
-    {
-        title: "",
-        artist: "",
-        category: "",
-        description: "",
         image: ""
     },
 ];
