@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
             <footer>
-                <p>Copyright@ {date.getFullYear()}</p>
+                <p style={{ border: "3px solid blue", textAlign: "center" }}>Copyright@ {date.getFullYear()}</p>
             </footer>
         </div>
     )
