@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Footer from "../components/Footer";
 
 class Categories extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            posts: [],
+            categories: []
+        };
+    }
+
     render() {
         return (
             <div>
