@@ -6,7 +6,9 @@ const routes = require("./Routes");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
+const findOrCreate = require("mongoose-findorcreate");
 const passportLocalMongoose = require("passport-local-mongoose");
+const Art = require('./Models/art');
 const app = express();
 
 app.use(cors());
@@ -20,6 +22,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(routes);
+app.use(models);
 
 app.use(session({
     secret: process.env.secret,
@@ -31,6 +34,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/artDB");
+
+Art.plugin(passportLocalMongoose);
+Art.plugin(findOrCreate);
 
 app.listen(PORT, function () {
     console.log(PORT);
