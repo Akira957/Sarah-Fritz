@@ -14,6 +14,8 @@ class Categories extends Component {
         return (
             <div>
                 <h1>Artwork Categories</h1>
+                <br />
+                <h3>All of her art is Separated into these different categories</h3>
                 <Footer />
             </div>
         )
