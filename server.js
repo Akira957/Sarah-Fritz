@@ -32,10 +32,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/artDB");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/artDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
-Art.plugin(passportLocalMongoose);
-Art.plugin(findOrCreate);
+// Art.plugin(passportLocalMongoose);
+// Art.plugin(findOrCreate);
 
 app.listen(PORT, function () {
     console.log(PORT);
