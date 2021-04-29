@@ -5,7 +5,7 @@ import About from "./About";
 import Artwork from "./Artwork";
 import Categories from "./Categories";
 import Login from "./Login";
-import Register from "./Resgister";
+import Register from "./Register";
 
 
 class Main extends Component {

@@ -7,7 +7,7 @@ import Categories from "./pages/Categories";
 import Main from "./pages/Main";
 import Navigation from "./components/Navigation";
 import Login from "./pages/Login";
-import Register from "./pages/Resgister";
+import Register from "./pages/Register";
 
 
 function App() {
