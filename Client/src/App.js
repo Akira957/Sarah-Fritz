@@ -6,6 +6,8 @@ import Artwork from "./pages/Artwork";
 import Categories from "./pages/Categories";
 import Main from "./pages/Main";
 import Navigation from "./components/Navigation";
+import Login from "./pages/Login";
+import Register from "./pages/Resgister";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Link to="/About" component={About} />
           <Link to="/Artwork" component={Artwork} />
           <Link to="/Categories" component={Categories} />
+          <Link to="/Login" component={Login} />
+          <Link to="/Register" component={Register} />
         </Navigation>
         <Main />
       </div>

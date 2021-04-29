@@ -4,6 +4,8 @@ import Home from "./Home";
 import About from "./About";
 import Artwork from "./Artwork";
 import Categories from "./Categories";
+import Login from "./Login";
+import Register from "./Resgister";
 
 
 class Main extends Component {
@@ -15,6 +17,8 @@ class Main extends Component {
                     <Route path="/About" component={About} />
                     <Route exact path="/Artwork" component={Artwork} />
                     <Route exact path="/Categories" component={Categories} />
+                    <Route exact path="/Login" component={Login} />
+                    <Route exact path="/Register" component={Register} />
                 </Switch>
             </div>
         )
