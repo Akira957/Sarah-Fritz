@@ -14,6 +14,11 @@ function Login() {
         setUser(oldState => ({ ...oldState, [name]: value }));
     };
 
+    const handleSubmit = event => {
+        event.preventDefault();
+        console.log("creating new user!!");
+    }
+
     const { email, password } = user;
 
     return (
