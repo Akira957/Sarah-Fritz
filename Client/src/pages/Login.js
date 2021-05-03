@@ -16,7 +16,7 @@ function Login() {
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log("creating new user!!");
+        console.log("login user!!");
     }
 
     const { email, password } = user;
@@ -28,7 +28,7 @@ function Login() {
                 <input name="email" onChange={handleLogin} value={email} placeholder="Email" />
                 <input name="password" onChange={handleLogin} value={password} placeholder="Password" />
             </form>
-            <button>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
         </div>
     )
 }

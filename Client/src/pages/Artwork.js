@@ -1,4 +1,3 @@
-import { response } from 'express';
 import React, { useState, useEffect } from 'react';
 import Footer from "../components/Footer";
 
@@ -11,16 +10,16 @@ function Artwork() {
     const [items, setItems] = useState([]);
     const [initialize, setInitialize] = useState(false);
 
-    const uploadArt = () => {
-        setItems(items.concat(response.data));
-        setInitialize(true);
-    }
+    // const uploadArt = () => {
+    //     setItems(items.concat(response.data));
+    //     setInitialize(true);
+    // }
 
-    useEffect(() => {
-        if (!initialize) {
-            uploadArt();
-        }
-    })
+    // useEffect(() => {
+    //     if (!initialize) {
+    //         uploadArt();
+    //     }
+    // })
 
     return (
         <div>

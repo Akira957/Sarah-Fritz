@@ -14,6 +14,11 @@ function Register() {
         setUser(oldState => ({ ...oldState, [name]: value }));
     };
 
+    const handleSubmit = event => {
+        event.preventDefault();
+        console.log("create new user!!");
+    }
+
     const { email, password } = user;
 
     return (
@@ -23,7 +28,7 @@ function Register() {
                 <input name="email" onChange={handleChange} value={email} placeholder="Email" />
                 <input name="password" onChange={handleChange} value={password} placeholder="Password" />
             </form>
-            <button>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
         </div>
     )
 }
