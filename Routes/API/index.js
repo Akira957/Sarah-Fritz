@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const artRoutes = require("./art");
 
-// Plant routes
+// Art routes
 router.use("/art", artRoutes);
 
 module.exports = router;
