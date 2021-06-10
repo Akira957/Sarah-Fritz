@@ -4,8 +4,8 @@ import Home from "./Home";
 import About from "./About";
 import Artwork from "./Artwork";
 import Categories from "./Categories";
-import Login from "./Login";
-import Register from "./Register";
+import Login from "./Login/Login";
+import Register from "./Register/Register";
 
 
 class Main extends Component {

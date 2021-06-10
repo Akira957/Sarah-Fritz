@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from "../components/Footer";
+import "./Categories.css";
 
 function Categories() {
 
@@ -13,7 +14,7 @@ function Categories() {
         <div>
             <h1>Artwork Categories</h1>
             <br />
-            <h3>All of her art is Separated into these different categories</h3>
+            <h3 className="category">All of her art is Separated into these different categories</h3>
             <Footer />
         </div>
     )
