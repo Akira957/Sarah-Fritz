@@ -9,3 +9,15 @@ footer {
     text-align: center;
     margin: 0 45%;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer-title {
+        margin: 0 43%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer-title {
+        margin: 0 41%;
+    }
+}
