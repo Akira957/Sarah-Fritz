@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Footer from "../components/Footer";
+import { Input } from '../components/Form';
 import API from '../utils/API';
 
 class Artwork extends Component {
@@ -35,6 +36,21 @@ class Artwork extends Component {
         return (
             <div>
                 <h1>Pictures of her Artwork</h1>
+
+                <form>
+                    <Input
+                        value={this.state.title}
+                        onChange={this.handleInputChange}
+                        name="title"
+                        placeholder="Art Title"
+                    />
+                    <Input
+                        value={this.state.category}
+                        onChange={this.handleInputChange}
+                        name="category"
+                        placeholder="Art Category"
+                    />
+                </form>
                 <Footer />
             </div>
         )
