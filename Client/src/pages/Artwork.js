@@ -1,33 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import Footer from "../components/Footer";
+import API from '../utils/API';
 
-function Artwork() {
+class Artwork extends Component {
 
-    const [artWork, setArtWork] = useState({
-        artwork: "",
-        artist: ""
-    })
-    const [items, setItems] = useState([]);
-    const [initialize, setInitialize] = useState(false);
+    state = {
+        art: [],
+        title: "",
+        category: ""
+    }
 
-    // const uploadArt = () => {
-    //     setItems(items.concat(response.data));
-    //     setInitialize(true);
-    // }
+    componentDidMount = () => {
+        this.loadArt();
+    }
 
-    // useEffect(() => {
-    //     if (!initialize) {
-    //         uploadArt();
-    //     }
-    // })
+    loadArt = () => {
+        API.getArt()
+            .then(res => this.setState({
+                art: res.data,
+                title: "",
+                category: ""
+            }))
+            .catch(err => console.log(err));
+    };
 
-    return (
-        <div>
-            <h1>Pictures of her Artwork</h1>
-            <Footer />
-        </div>
-    )
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
 
+    render() {
+        return (
+            <div>
+                <h1>Pictures of her Artwork</h1>
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default Artwork;

@@ -37,6 +37,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/artDB", { useNe
 // Art.plugin(passportLocalMongoose);
 // Art.plugin(findOrCreate);
 
+app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./Client/public/index.html"));
+});
+
 app.listen(PORT, function () {
     console.log(PORT);
     console.log(`API Server now listening on http://localhost/${PORT}`);
